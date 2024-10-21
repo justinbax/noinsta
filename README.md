@@ -1,5 +1,11 @@
 # noinsta
 
+## Warning
+
+This project uses the `instagrapi` Python library, which is a **non-approved** Instagram API. Non-approved, private APIs such as this one are against Instagram's Terms of Service and should **NOT** be used. Using it would be considered having a bot account, which is easily detectable and punished by Instagram's team.
+
+This project is a proof of concept, created for educational purposed. It is not encouraged for anyone to use it. Consequences of breaking Instagram's Terms of Service may include banning your account indefinitely.
+
 ## Requirements
 
 - AWS account
