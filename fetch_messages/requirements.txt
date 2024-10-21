@@ -1,0 +1,4 @@
+requests
+instagrapi
+boto3
+pillow

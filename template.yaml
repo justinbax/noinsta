@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  SAM Template for noinsta project
+
+Globals:
+  Function:
+    Timeout: 45
+
+Resources:
+  FetchMessagesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: fetch_messages/
+      Handler: app.lambda_handler
+      Runtime: python3.12
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          INSTAGRAM_USERNAME: ""
+          INSTAGRAM_PASSWORD: ""
+          S3_BUCKET: ""
+          S3_SESSION_FILE_KEY: ""
+          RECENT_MESSAGES_THRESHOLD_MINUTES: ""
+          EMAIL_SERVER: ""
+          EMAIL_PORT: ""
+          EMAIL_ADDRESS: ""
+          EMAIL_PASSWORD: ""
+          EMAIL_TO: ""
+
