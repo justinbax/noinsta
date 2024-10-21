@@ -28,6 +28,7 @@ Recommended values:
 - `S3_BUCKET`: `noinsta`
 - `S3_SESSION_FILE_KEY`: `session.json`
 - `RECENT_MESSAGES_THRESHOLD_MINUTES`: `16`
+- `EMAIL_TO`: The email associated to your SMS inbox. Most phone providers provide such an address, and they often start with all digits of your phone number. Look online for the exact email to use for your phone provider. For example, the email for a phone number provided by AT&T would be `{10 digit number}@txt.att.net`.
 
 ### Setting up the S3 bucket
 
